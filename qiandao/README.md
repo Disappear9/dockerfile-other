@@ -1,0 +1,1 @@
+sudo docker run -it -p port:port -v qiandao:/app/data -e PORT=port disappear9/qiandao
