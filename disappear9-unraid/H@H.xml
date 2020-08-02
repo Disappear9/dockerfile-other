@@ -1,15 +1,17 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Hentai@Home</Name>
-  <Repository>disappear9/hentaia</Repository>
-  <Registry>https://hub.docker.com/r/disappear9/hent</Registry>
+  <Repository>disappear9/hentaiathome</Repository>
+  <Registry>https://hub.docker.com/r/disappear9/hentaiathome</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>true</Privileged>
   <Support/>
   <Project/>
-  <Overview>Hentai@Home Wiki [br]&#xD;
+  <Overview>GitHub: [br]&#xD;
+https://github.com/Disappear9/H-at-H-docker [br]&#xD;
+Hentai@Home Wiki [br]&#xD;
 https://ehwiki.org/wiki/Hentai@Home [br]&#xD;
 About YOUR_PORT [br]&#xD;
 https://ehwiki.org/wiki/Technical_Issues#Ports</Overview>
@@ -23,7 +25,9 @@ https://ehwiki.org/wiki/Technical_Issues#Ports</Overview>
   <DateInstalled>1596359501</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>Hentai@Home Wiki [br]&#xD;
+  <Description>GitHub: [br]&#xD;
+https://github.com/Disappear9/H-at-H-docker [br]&#xD;
+Hentai@Home Wiki [br]&#xD;
 https://ehwiki.org/wiki/Hentai@Home [br]&#xD;
 About YOUR_PORT [br]&#xD;
 https://ehwiki.org/wiki/Technical_Issues#Ports</Description>
@@ -57,7 +61,7 @@ https://ehwiki.org/wiki/Technical_Issues#Ports</Description>
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="Port" Target="" Default="YOUR_PORT_HERE" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Port" Target="" Default="YOUR_PORT_HERE" Mode="tcp" Description="See https://github.com/Disappear9/H-at-H-docker" Type="Port" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Data Dir" Target="/hath/data" Default="DATA_DIR" Mode="rw" Description="Container Path: /hath/data" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Download Dir" Target="/hath/download" Default="DOWNLOAD_DIR" Mode="rw" Description="Container Path: /hath/download" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="HatH_KEY" Target="HatH_KEY" Default="YOUR_CLIENT_KEY_HERE" Mode="" Description="Container Variable: HatH_KEY" Type="Variable" Display="always" Required="true" Mask="false"></Config>
