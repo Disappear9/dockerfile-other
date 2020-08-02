@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Beta>False</Beta>
+  <Category>Downloaders:</Category>
+  <Name>Hentai@Home</Name>
+  <Description>
+   Hentai@Home
+  </Description>
+  <Overview>
+    Hentai@Home Wiki [br]
+    https://ehwiki.org/wiki/Hentai@Home [br]
+    About YOUR_PORT [br]
+    https://ehwiki.org/wiki/Technical_Issues#Ports
+  </Overview>
+  <Registry>https://hub.docker.com/r/disappear9/hentaiathome/</Registry>
+  <GitHub>https://github.com/Disappear9/H-at-H-docker</GitHub>
+  <Repository>disappear9/hentaiathome</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>11112</HostPort>
+        <ContainerPort>11112</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>HatH_KEY</Name>
+      <Value>YOUR_CLIENT_KEY_HERE</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>DATA_DIR</HostDir>
+      <ContainerDir>/hath/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>DOWNLOAD_DIR</HostDir>
+      <ContainerDir>/hath/download</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <ExtraParams>
+  </ExtraParams>
+</Containers>
