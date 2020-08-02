@@ -1,50 +1,64 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <Beta>False</Beta>
-  <Category>Downloaders:</Category>
+<?xml version="1.0"?>
+<Container version="2">
   <Name>Hentai@Home</Name>
-  <Description>
-   Hentai@Home
-  </Description>
-  <Overview>
-    Hentai@Home Wiki [br]
-    https://ehwiki.org/wiki/Hentai@Home [br]
-    About YOUR_PORT [br]
-    https://ehwiki.org/wiki/Technical_Issues#Ports
-  </Overview>
-  <Registry>https://hub.docker.com/r/disappear9/hentaiathome/</Registry>
-  <GitHub>https://github.com/Disappear9/H-at-H-docker</GitHub>
-  <Repository>disappear9/hentaiathome</Repository>
-  <BindTime>true</BindTime>
+  <Repository>disappear9/hentaia</Repository>
+  <Registry>https://hub.docker.com/r/disappear9/hent</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
   <Privileged>true</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>Hentai@Home Wiki [br]&#xD;
+https://ehwiki.org/wiki/Hentai@Home [br]&#xD;
+About YOUR_PORT [br]&#xD;
+https://ehwiki.org/wiki/Technical_Issues#Ports</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1596359501</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Hentai@Home Wiki [br]&#xD;
+https://ehwiki.org/wiki/Hentai@Home [br]&#xD;
+About YOUR_PORT [br]&#xD;
+https://ehwiki.org/wiki/Technical_Issues#Ports</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>11112</HostPort>
-        <ContainerPort>11112</ContainerPort>
+        <HostPort/>
+        <ContainerPort/>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
   </Networking>
-  <Environment>
-    <Variable>
-      <Name>HatH_KEY</Name>
-      <Value>YOUR_CLIENT_KEY_HERE</Value>
-    </Variable>
-  </Environment>
   <Data>
     <Volume>
-      <HostDir>DATA_DIR</HostDir>
+      <HostDir/>
       <ContainerDir>/hath/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>DOWNLOAD_DIR</HostDir>
+      <HostDir/>
       <ContainerDir>/hath/download</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <ExtraParams>
-  </ExtraParams>
-</Containers>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>HatH_KEY</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Port" Target="" Default="YOUR_PORT_HERE" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Data Dir" Target="/hath/data" Default="DATA_DIR" Mode="rw" Description="Container Path: /hath/data" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Download Dir" Target="/hath/download" Default="DOWNLOAD_DIR" Mode="rw" Description="Container Path: /hath/download" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="HatH_KEY" Target="HatH_KEY" Default="YOUR_CLIENT_KEY_HERE" Mode="" Description="Container Variable: HatH_KEY" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+</Container>
